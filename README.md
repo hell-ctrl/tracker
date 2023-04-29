@@ -61,7 +61,7 @@ Olá, eu desenvolvi essa ferramenta inspirado na ferramenta [seeker](https://git
  ```
 ## como usar a ferramenta?
 
-```
+```bash
 
    # passo 1 - iniciar a ferramenta
 
