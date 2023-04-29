@@ -77,7 +77,7 @@ Olá, eu desenvolvi essa ferramenta inspirado na ferramenta [seeker](https://git
 
    # abra uma nova aba e inicie o ngrok com o comando
 
-   # ./ngrok http 8080
+   ./ngrok http 8080
 
 ```
 
