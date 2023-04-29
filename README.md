@@ -59,7 +59,7 @@ Olá, eu desenvolvi essa ferramenta inspirado na ferramenta [seeker](https://git
 
   ./install.sh
  ```
-## Como usar a ferramenta?
+## como usar a ferramenta?
 
 ```
 
