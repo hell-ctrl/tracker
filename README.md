@@ -59,7 +59,27 @@ Olá, eu desenvolvi essa ferramenta inspirado na ferramenta [seeker](https://git
 
   ./install.sh
  ```
+## Como usar a ferramenta?
 
+```
+
+   # passo 1 - iniciar a ferramenta
+
+   node src/tracker.js
+
+   # passo 2 - quando informar a url, um servidor express na porta 8080 será iniciando.
+
+   # passo 3 - entre na url `http://localhost:8080` e aperte em permitir, aceitando a solicitação de localização.
+
+   # passo 4 - volte para a ferramenta e veja as informações capturadas.
+
+   # usando o ngrok:
+
+   # abra uma nova aba e inicie o ngrok com o comando
+
+   # ./ngrok http 8080
+
+```
 
 ## capturas de tela
 
