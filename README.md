@@ -65,9 +65,9 @@ Olá, eu desenvolvi essa ferramenta inspirado na ferramenta [seeker](https://git
 
    # passo 1 - iniciar a ferramenta
    #se for a primeira vez, digite:
-
    chmod +x install.sh
    ./install.sh
+   
    #se não:
    node src/tracker
 
