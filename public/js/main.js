@@ -88,7 +88,6 @@ const getIp = async () => {
     type: 'GET',
     contentType: 'application/json'
   });
-  console.log(data)
   return data;
 }
 
