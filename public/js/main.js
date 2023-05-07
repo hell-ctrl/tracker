@@ -16,7 +16,7 @@ const getPosition = () => {
 
     function errorCB(e) {
       if (e.PERMISSION_DENIED) {
-        reject(new Error("POR FAVOR, ATIVE A LOCALIZAÇÃO, ATUALIZE A PÁGINA E PERMITA A LOCALIZAÇÃO!"));
+        alert("POR FAVOR, ATIVE A LOCALIZAÇÃO, ATUALIZE A PÁGINA E PERMITA A LOCALIZAÇÃO!");
       } else {
         reject(new Error("Erro ao obter a posição."));
       }
