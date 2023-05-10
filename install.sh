@@ -51,5 +51,6 @@ clear
 
 echo -e "${YELLOW}Running tracker.js...${NC}"
 sleep 2
+cd src
 clear
-node src/tracker.js
+node tracker.js
