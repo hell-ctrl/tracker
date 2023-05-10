@@ -10,8 +10,15 @@
   "author": "hell_",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.4.0",
+
+    "chalk": "^5.2.0",
+
     "cors": "^2.8.5",
+
     "express": "^4.18.2",
-    "shalk": "^0.0.1-security"
+
+    "prompt-sync": "^4.2.0"
+
   }
 }
