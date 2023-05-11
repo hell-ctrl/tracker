@@ -69,7 +69,8 @@ Olá, eu desenvolvi essa ferramenta inspirado na ferramenta [seeker](https://git
    ./install.sh
    
    #se não:
-   node src/tracker
+   cd src
+   node tracker
 
    # passo 2 - quando informar a url, um servidor express na porta 8080 será iniciando.
 
