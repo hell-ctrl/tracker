@@ -1,5 +1,6 @@
 import promptSync from "prompt-sync";
 import fs from "fs";
+import chalk from "chalk";
 import getIpInfo from "./getIpInfo.js";
 import { startServer } from "./server.js";
 
