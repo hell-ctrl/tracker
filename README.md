@@ -28,6 +28,7 @@ Olá, eu desenvolvi essa ferramenta inspirado na ferramenta [seeker](https://git
   * altitude
   * velocidade
   * mapa
+  obs: se a vítima estiver usando um computador, a localização pode ser imprecisa.
 
 ## como instalar a ferramenta?
 
