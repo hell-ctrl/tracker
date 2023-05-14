@@ -9,7 +9,8 @@ const getPosition = () => {
 
     function successCB(pos) {
       const latitude = pos.coords.latitude;
-      const longitude = pos.coords.longitude;                                                                                                                                           const altitude = pos.coords.altitude;
+      const longitude = pos.coords.longitude;   
+      const altitude = pos.coords.altitude;
       const speed = pos.coords.speed;
       resolve({latitude, longitude, altitude, speed});
     }
@@ -59,7 +60,7 @@ function getUserAgentInfo() {
   os = ua.split(";")[1].trim()
 
   //get user device
-  device = ua.split(";")[2].trim().split(" ")[0].replace(")", "");
+  device = ua.split(";")[2].trim().replace(")", "");
 
   // get the name of the user's browser
   if (ua.indexOf("SamsungBrowser") !== -1) {
