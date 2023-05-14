@@ -3,6 +3,8 @@
 
 Olá, eu desenvolvi essa ferramenta inspirado na ferramenta [seeker](https://github.com/thewhiteh4t/seeker), para treinar meus conhecimentos e para mostar o quanto estamos vulneraveis na internet, e não devemos confiar em qualquer link que acessamos.
 
+***obs:*** se a vítima estiver usando um computador, a localização pode ser imprecisa.
+
 
 ## o que a ferramenta pode capturar?
 
@@ -28,7 +30,6 @@ Olá, eu desenvolvi essa ferramenta inspirado na ferramenta [seeker](https://git
   * altitude
   * velocidade
   * mapa
-  * obs: se a vítima estiver usando um computador, a localização pode ser imprecisa.
 
 ## como instalar a ferramenta?
 
